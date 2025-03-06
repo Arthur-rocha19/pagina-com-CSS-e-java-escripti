@@ -21,15 +21,23 @@
            color: white;/*Definir a cor txeto do botao*/
            border: nome; /* Remover a borda do botao*/
            border - radius : 5px;/*Adicionar cantos arredondados ao boatao*/
+
        }
     </style>
-    d>
-    >
 </head>
 <body>
     <!--Titulo principal da pagina-->
     <h1>Bem vindo ao meu Site simples</h1>
     <!--Criando o Botao que mudara a cor de fundo da pagina-->
-    <button onclick="mudarCor()">Mudar Cor de Fundo</button> 
+    <button onclick="mudarCor()">Mudar Cor de Fundo</button>
+    <script>
+        //Funcao JavaScript para mudar a cor de fundo da pagina
+        function mudarCor(){
+            //Gerar uma cor aleitoria em formato hexadecimal 
+            var corAleatoria = '#' + Math.floor(marth.random()*16777215).toString(16)
+            //Aplicar nova cor ao fundo da pagina 
+            document.body.style.background = corAleatoria;
+        }
+    </script> 
 </body>
 </html>
